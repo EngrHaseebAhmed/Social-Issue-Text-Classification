@@ -1,6 +1,7 @@
 # 🗂️ Social Issues Classification using NLP
 
 This dataset captures Reddit user discussions related to social infrastructure issues in Asian Cities, focusing on topics like electricity, water, waste management, traffic, and security. It includes both a **cleaned CSV** version and a **tokenized JSON** format ready for machine learning.
+Python Notebook(ipynb) consisting of full implementaion of the project with results.
 
 ---
 
@@ -102,11 +103,12 @@ This project implements a full NLP pipeline to classify Reddit posts based on di
 - Created a sparse matrix representing weighted word frequencies.
 
 #### 5. **Model Training**
-- Evaluated multiple classical ML models:
-  - Multinomial Naive Bayes
+- Evaluated multiple classical ML and DL models:
+  - BERT
+  - LSTM
+  - Random Forest
   - Logistic Regression
   - Support Vector Machine (SVM)
-- Used `GridSearchCV` for hyperparameter tuning and model optimization.
 
 #### 6. **Model Evaluation**
 - Measured performance using:
