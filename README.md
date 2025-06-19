@@ -98,5 +98,5 @@ Please ensure compliance with Reddit’s [API Terms of Use](https://www.redditin
 
 ## 👤 Author
 
-Prepared by:    Owais Ali Khan                        and                                    Haseeb Ahmed  
-Contact:        awais.ali.khan610@gmail.com                                                  engr.haseebahmed103332@gmail.com
+Prepared by:Haseeb Ahmed  
+Contact:engr.haseebahmed103332@gmail.com
