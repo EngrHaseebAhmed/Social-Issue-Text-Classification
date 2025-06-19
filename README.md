@@ -1,4 +1,4 @@
-# 🗂️ Reddit Social Issues Dataset
+# 🗂️ Social Issues Classification using NLP
 
 This dataset captures Reddit user discussions related to social infrastructure issues in Asian Cities, focusing on topics like electricity, water, waste management, traffic, and security. It includes both a **cleaned CSV** version and a **tokenized JSON** format ready for machine learning.
 
