@@ -73,6 +73,7 @@ This project implements a full NLP pipeline to classify Reddit posts based on di
 - Train and evaluate machine learning models on the cleaned dataset.
 
 ---
+## 📁 Project Structure
 
 ### 🛠️ Implementation Details
 
@@ -126,7 +127,6 @@ This project implements a full NLP pipeline to classify Reddit posts based on di
 
 ---
 
-### 📁 Project Structure
 
 
 
