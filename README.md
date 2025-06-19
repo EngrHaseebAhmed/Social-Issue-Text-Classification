@@ -9,6 +9,8 @@ This dataset captures Reddit user discussions related to social infrastructure i
 |------|-------------|
 | `reddit_social_issues_cleaned.csv` | Cleaned, labeled dataset with structured Reddit posts and metadata |
 | `preprocessed_reddit_social_issues_cleaned.json` | Tokenized version of the dataset, ready for transformer-based NLP models (e.g., BERT) |
+| `Social_Issues_Classification.ipynb` | Social_Issues_Classification.ipynb): Notebook for preprocessing and classifying social issues |
+
 
 ---
 
@@ -61,6 +63,72 @@ Each entry is a dictionary with:
 - **Tokenization**: Applied lowercasing, stopword removal, and encoding for model training.
 
 ---
+## 📊 Project Implementation: Social Issues Classification using NLP
+
+This project implements a full NLP pipeline to classify Reddit posts based on different social issues such as crime, electricity, waste management, harassment, and more. It showcases modern data preprocessing, feature engineering, and classical machine learning applied to real-world text data.
+
+### 🚀 Objectives
+- Classify Reddit posts into relevant social issue categories.
+- Apply NLP preprocessing and sentiment analysis to raw text data.
+- Train and evaluate machine learning models on the cleaned dataset.
+
+---
+
+### 🛠️ Implementation Details
+
+#### 1. **Data Collection**
+- The dataset comprises Reddit posts related to various societal issues.
+- Each post includes a title, body text, and a manually labeled category.
+
+#### 2. **Text Preprocessing**
+- Merged the `title` and `text` columns for unified input.
+- Cleaned the text using regex to remove:
+  - URLs
+  - Numbers
+  - HTML tags
+  - Punctuation and special characters
+- Converted text to lowercase and normalized whitespace.
+- Removed stopwords using SpaCy.
+- Applied lemmatization using SpaCy's `en_core_web_sm` model.
+- Generated sentiment polarity scores using TextBlob.
+
+#### 3. **Exploratory Data Analysis (EDA)**
+- Analyzed word count and class distribution.
+- Visualized insights using `matplotlib` and `seaborn`.
+
+#### 4. **Feature Engineering**
+- Transformed text into numerical features using **TF-IDF Vectorization**.
+- Created a sparse matrix representing weighted word frequencies.
+
+#### 5. **Model Training**
+- Evaluated multiple classical ML models:
+  - Multinomial Naive Bayes
+  - Logistic Regression
+  - Support Vector Machine (SVM)
+- Used `GridSearchCV` for hyperparameter tuning and model optimization.
+
+#### 6. **Model Evaluation**
+- Measured performance using:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+- Displayed confusion matrices for detailed class-wise analysis.
+
+---
+
+### 🧠 Key NLP Techniques
+- Tokenization and Lemmatization (SpaCy)
+- Sentiment Analysis (TextBlob)
+- TF-IDF Vectorization
+- Multi-class Text Classification
+- Evaluation and Visualization
+
+---
+
+### 📁 Project Structure
+
+
 
 ### Load CSV (Pandas)
 ```python
